@@ -5,21 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import testBase.TestBase;
 import utils.CommonUtils;
 import utils.ElementUtils;
 
-public class HomePage {
-	
-	WebDriver driver;
-	private ElementUtils elementUtils;
+public class HomePage extends TestBase {
 	
 	public HomePage(WebDriver driver) {
-		
-		this.driver = driver;
-		PageFactory.initElements(driver,this);
-		elementUtils = new ElementUtils(driver);
-		
-	}
+        super(driver); // Call the constructor of the BasePage
+    }
 	
 	@FindBy(xpath="//span[text()='My Account']")
 	private WebElement myAccountDropMenu;

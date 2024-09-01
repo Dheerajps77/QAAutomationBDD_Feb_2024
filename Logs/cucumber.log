@@ -1,0 +1,144 @@
+18:59:51.688 [main] INFO  utils.LogUtils - User navigates to Register Account page
+18:59:52.720 [main] INFO  utils.LogUtils - User enters the details into below fields
+18:59:52.809 [main] INFO  utils.LogUtils - User selects Privacy Policy
+18:59:53.374 [main] INFO  utils.LogUtils - User clicks on Continue button
+18:59:53.444 [main] INFO  utils.LogUtils - User account should get created successfully
+20:39:36.404 [main] INFO  utils.LogUtils - User navigates to Register Account page
+20:39:38.032 [main] INFO  utils.LogUtils - User enters the details into below fields
+20:39:38.113 [main] INFO  utils.LogUtils - User selects Privacy Policy
+20:39:39.156 [main] INFO  utils.LogUtils - User clicks on Continue button
+20:39:39.240 [main] INFO  utils.LogUtils - User account should get created successfully
+20:39:39.452 [main] ERROR utils.LogUtils - Failed to send test report email: Cannot read the array length because "screenshotFiles" is null
+20:49:11.796 [main] INFO  utils.LogUtils - User navigates to Register Account page
+20:49:13.091 [main] INFO  utils.LogUtils - User enters the details into below fields
+20:49:13.212 [main] INFO  utils.LogUtils - User selects Privacy Policy
+20:49:14.104 [main] INFO  utils.LogUtils - User clicks on Continue button
+20:49:14.173 [main] INFO  utils.LogUtils - User account should get created successfully
+20:49:14.353 [main] WARN  utils.LogUtils - No screenshots found in the directory: C:\Users\thrah\NewWorkSpace\QAAutomationBDD_Feb_2024\ExtentReports\SparkReport_ 1_Sep_24_20_49_05/Screenshots
+20:49:14.393 [main] ERROR utils.LogUtils - Failed to send test report email
+org.apache.commons.mail.EmailException: Cannot attach file "C:\Users\thrah\NewWorkSpace\QAAutomationBDD_Feb_2024\ExtentReports\SparkReport_ 1_Sep_24_20_49_05/HtmlReport/ExtentHtml.html"
+	at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:333) ~[commons-email-1.5.jar:1.5]
+	at utils.EmailUtil.sendEmailWithAttachments(EmailUtil.java:26) ~[classes/:?]
+	at testBase.TestBase.sendTestReportEmail(TestBase.java:64) ~[classes/:?]
+	at hooks.MyHooks.tearDown(MyHooks.java:96) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151) ~[cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129) [cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28) [cucumber-junit-7.10.1.jar:7.10.1]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89) [cucumber-junit-7.10.1.jar:7.10.1]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248) [cucumber-junit-7.10.1.jar:7.10.1]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: java.io.IOException: "C:\Users\thrah\NewWorkSpace\QAAutomationBDD_Feb_2024\ExtentReports\SparkReport_ 1_Sep_24_20_49_05/HtmlReport/ExtentHtml.html" does not exist
+	at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:322) ~[commons-email-1.5.jar:1.5]
+	... 52 more
+20:54:22.215 [main] INFO  utils.LogUtils - User navigates to Register Account page
+20:54:23.615 [main] INFO  utils.LogUtils - User enters the details into below fields
+20:54:23.715 [main] INFO  utils.LogUtils - User selects Privacy Policy
+20:54:24.511 [main] INFO  utils.LogUtils - User clicks on Continue button
+20:54:24.606 [main] INFO  utils.LogUtils - User account should get created successfully
+21:14:29.680 [main] WARN  utils.LogUtils - No screenshots found in the directory: C:\Users\thrah\NewWorkSpace\QAAutomationBDD_Feb_2024\ExtentReports\SparkReport_ 1_Sep_24_20_54_15/Screenshots
+21:14:32.705 [main] ERROR utils.LogUtils - Failed to send test report email
+org.apache.commons.mail.EmailException: Cannot attach file "C:\Users\thrah\NewWorkSpace\QAAutomationBDD_Feb_2024\ExtentReports\SparkReport_ 1_Sep_24_20_54_15/HtmlReport/ExtentHtml.html"
+	at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:333) ~[commons-email-1.5.jar:1.5]
+	at utils.EmailUtil.sendEmailWithAttachments(EmailUtil.java:26) ~[classes/:?]
+	at testBase.TestBase.sendTestReportEmail(TestBase.java:64) ~[classes/:?]
+	at hooks.MyHooks.tearDown(MyHooks.java:96) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64) ~[cucumber-java-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151) ~[cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129) ~[cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) [cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129) [cucumber-core-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28) [cucumber-junit-7.10.1.jar:7.10.1]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89) [cucumber-junit-7.10.1.jar:7.10.1]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233) [cucumber-junit-7.10.1.jar:7.10.1]
+	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248) [cucumber-junit-7.10.1.jar:7.10.1]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: java.io.IOException: "C:\Users\thrah\NewWorkSpace\QAAutomationBDD_Feb_2024\ExtentReports\SparkReport_ 1_Sep_24_20_54_15/HtmlReport/ExtentHtml.html" does not exist
+	at org.apache.commons.mail.MultiPartEmail.attach(MultiPartEmail.java:322) ~[commons-email-1.5.jar:1.5]
+	... 52 more
+21:30:00.888 [main] INFO  utils.LogUtils - User navigates to Register Account page
+21:30:02.561 [main] INFO  utils.LogUtils - User enters the details into below fields
+21:30:02.680 [main] INFO  utils.LogUtils - User selects Privacy Policy
+21:30:04.271 [main] INFO  utils.LogUtils - User clicks on Continue button
+21:30:04.369 [main] INFO  utils.LogUtils - User account should get created successfully

@@ -3,32 +3,20 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
+import testBase.TestBase;
 import utils.CommonUtils;
-import utils.ElementUtils;
 
-public class AccountPage {
+public class AccountPage extends TestBase {
 
-	WebDriver driver;
-	private ElementUtils elementUtils;
+    @FindBy(linkText = "Edit your account information")
+    private WebElement editYourAccountInformationOption;
 
-	public AccountPage(WebDriver driver) {
+    public AccountPage(WebDriver driver) {
+        super(driver);
+    }
 
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		elementUtils = new ElementUtils(driver);
-
-	}
-
-	@FindBy(linkText = "Edit your account information")
-	private WebElement editYourAccountInformationOption;
-
-	public boolean displayStatusOfEditYourAccountInformationOption() {
-
-		return elementUtils.displayStatusOfElement(editYourAccountInformationOption,
-				CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
-
-	}
-
+    public boolean displayStatusOfEditYourAccountInformationOption() {
+        return elementUtils.displayStatusOfElement(editYourAccountInformationOption, CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
+    }
 }

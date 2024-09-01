@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+
+
+	<Properties>
+		<Property name="basePath">./Logs</Property>
+		<Property name="smtpHost">smtp.gmail.com</Property>
+		<Property name="smtpPort">587</Property> <!-- 465 for SSL, 587 for TLS -->
+		<Property name="smtpUsername">yescust.onbord01</Property>
+		<Property name="smtpPassword">yesbank!123</Property> <!-- Use App Password if 2FA is enabled -->
+		<Property name="fromEmail">yescust.onbord01@gmail.com</Property>
+		<Property name="toEmail">yescust.onbord01@gmail.com</Property>
+	</Properties>
+
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<RollingFile name="File"
+			fileName="${basePath}/cucumber.log"
+			filePattern="${basePath}/automation-%d{yyyy-MM-dd}.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="50000" />
+		</RollingFile>
+
+		<SMTP name="Email" subject="Automation Log Report"
+			to="${toEmail}" from="${fromEmail}" smtpHost="${smtpHost}"
+			smtpPort="${smtpPort}" smtpUsername="${smtpUsername}"
+			smtpPassword="${smtpPassword}">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<ThresholdFilter level="ERROR" onMatch="ACCEPT"
+				onMismatch="DENY" />
+		</SMTP>
+
+	</Appenders>
+
+	 <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="CucumberFile"/>
+            <AppenderRef ref="Email"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
